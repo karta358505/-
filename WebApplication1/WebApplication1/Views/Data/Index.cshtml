@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>星期</h2>
+@using (Html.BeginForm("Index", "Data", FormMethod.Get)) 
+{
+<p>請輸入數字: @Html.TextBox("number")</p><input type="submit" value="查詢" >
+<p>查詢結果:@ViewBag.result</p>
+}
